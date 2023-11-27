@@ -1,0 +1,25 @@
+{
+  "name": "graphql_backend",
+  "version": "1.0.0",
+  "description": "- GraphQL is a query language \r - REST API \r  -",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jstgrowup/GraphQL_Backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jstgrowup/GraphQL_Backend/issues"
+  },
+  "homepage": "https://github.com/jstgrowup/GraphQL_Backend#readme",
+  "type": "module",
+  "dependencies": {
+    "@apollo/server": "^4.9.5",
+    "graphql": "^16.8.1"
+  }
+}

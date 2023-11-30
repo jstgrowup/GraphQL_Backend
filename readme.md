@@ -23,3 +23,67 @@ type Video {
   description:String!
 }
 ``
+```
+ query ExampleQuery {
+   user(id:1) {
+     id
+     name
+     age
+     nationality
+     friends {
+       name
+       age
+     }
+   }
+ }
+ query GetUser($id: ID!) {
+   user(id: $id) {
+     name
+     username
+     favouriteMovies {
+       name
+     }
+     friends {
+       name
+     }
+   }
+ }
+
+ query getmovie($moviename: String!) {
+   movie(name: $moviename) {
+     name
+     isPublished
+   }
+ }
+
+query getUsers{
+  users {
+    id
+    name
+    username
+  }
+}
+
+ mutation createUser($user: CreateUserInput!){
+   createUser(input: $user) {
+     id
+     name
+     age
+   }
+ }
+
+mutation updateUser($input: UpdateUserInput!){
+  updateUser(input: $input) {
+    id
+    name
+    username
+  }
+}
+
+mutation deleteUser($deleteUserId: ID!) {
+  deleteUser(id: $deleteUserId) {
+    id
+  }
+}
+
+```
